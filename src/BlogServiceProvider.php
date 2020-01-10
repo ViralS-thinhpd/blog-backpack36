@@ -77,7 +77,7 @@ class BlogServiceProvider extends ServiceProvider
 
         // Publishing the translation files.
         $this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/'),
+            __DIR__.'/../src/resources/lang' => resource_path('lang/'),
         ], 'blog.lang');
 
         // Registering package commands.

@@ -75,6 +75,11 @@ class BlogServiceProvider extends ServiceProvider
             __DIR__.'/../src/resources/views' => resource_path('views/vendor/backpack/base/inc'),
         ], 'blog.views');
 
+        // Publishing the translation files.
+        $this->publishes([
+            __DIR__.'/../resources/lang' => resource_path('lang/'),
+        ], 'blog.lang');
+
         // Registering package commands.
 
     }

@@ -72,13 +72,11 @@ class BlogServiceProvider extends ServiceProvider
         ], 'blog.database');
 
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/'),
-        ], 'blog.views');
-        $this->publishes([
-            __DIR__.'/../routes' => route(''),
+            __DIR__.'/../src/resources/views' => resource_path('views/vendor/backpack/base/inc'),
         ], 'blog.views');
 
         // Registering package commands.
-        // $this->commands([]);
+         $this->commands(['php artisan migrate']);
+
     }
 }

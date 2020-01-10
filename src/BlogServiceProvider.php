@@ -68,7 +68,7 @@ class BlogServiceProvider extends ServiceProvider
 
         // Publishing assets.
         $this->publishes([
-            __DIR__.'/../resources/assets' => database_path('migrations/'),
+            __DIR__.'/../src/database' => database_path('migrations/'),
         ], 'blog.database');
 
         // Publishing the translation files.

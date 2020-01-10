@@ -19,7 +19,7 @@ class Blog extends Model
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = ['description', 'title', 'image'];
     // protected $hidden = [];
     // protected $dates = [];
 

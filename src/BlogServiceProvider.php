@@ -63,13 +63,13 @@ class BlogServiceProvider extends ServiceProvider
 
         // Publishing the views.
         $this->publishes([
-            __DIR__.'/../src/App' => base_path('App/vendor/thinhpd'),
-        ], 'blog.views');
+            __DIR__.'/../src/App' => base_path('app/'),
+        ], 'blog.app');
 
         // Publishing assets.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/thinhpd'),
-        ], 'blog.views');*/
+        $this->publishes([
+            __DIR__.'/../resources/assets' => database_path('migrations/'),
+        ], 'blog.database');
 
         // Publishing the translation files.
         /*$this->publishes([

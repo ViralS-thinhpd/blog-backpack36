@@ -76,7 +76,7 @@ class BlogServiceProvider extends ServiceProvider
         ], 'blog.views');
 
         // Registering package commands.
-         $this->commands(['php artisan migrate']);
+//         $this->commands(['php artisan migrate']);
 
     }
 }

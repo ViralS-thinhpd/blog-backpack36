@@ -39,6 +39,7 @@ class AddRouteSidebarCommand extends Command
      */
     public function handle()
     {
+        $commands[] = 'php artisan backpack:crud blog';
         $commands[] = 'php artisan migrate';
         $commands[] = 'php artisan backpack:base:add-custom-route "CRUD::resource(\'blog\', \'BlogCrudController\');"';
         $commands[] = 'php artisan backpack:base:add-sidebar-content "<li><a href=\'{{ backpack_url(\'blog\') }}\'><i class=\'fa fa-tag\'></i> <span>Blogs</span></a></li>"';

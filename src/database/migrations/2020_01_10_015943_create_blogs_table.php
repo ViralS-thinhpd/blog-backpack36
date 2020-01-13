@@ -13,10 +13,10 @@ class CreateBlogsTable extends Migration
     public function up()
     {
         Schema::create('blogs', function (Blueprint $table) {
-            $table->increments('id');
-            $table->text('description')->nullable();
-            $table->string('title')->nullable();
-            $table->string('image')->nullable();
+            $table->bigIncrements('id');
+            $table->json('description')->nullable();
+            $table->json('title')->nullable();
+            $table->json('image')->nullable();
             $table->timestamps();
         });
     }

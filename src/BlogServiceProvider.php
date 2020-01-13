@@ -14,7 +14,7 @@ class BlogServiceProvider extends ServiceProvider
     public function boot()
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'thinhpd');
-         $this->loadViewsFrom(__DIR__.'/../resources/views', 'thinhpd');
+//         $this->loadViewsFrom(__DIR__.'/../resources/views', 'thinhpd');
          $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 //         $this->loadRoutesFrom(__DIR__.'/routes/custom.php');
 
@@ -71,9 +71,9 @@ class BlogServiceProvider extends ServiceProvider
             __DIR__.'/../src/database' => database_path(),
         ], 'blog.database');
 
-        $this->publishes([
-            __DIR__.'/../src/resources/views' => resource_path('views/vendor/backpack/base/inc'),
-        ], 'blog.views');
+//        $this->publishes([
+//            __DIR__.'/../src/resources/views' => resource_path('views/vendor/backpack/base/inc'),
+//        ], 'blog.views');
 
         // Publishing the translation files.
         $this->publishes([

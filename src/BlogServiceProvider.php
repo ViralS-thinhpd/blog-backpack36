@@ -16,7 +16,7 @@ class BlogServiceProvider extends ServiceProvider
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'thinhpd');
          $this->loadViewsFrom(__DIR__.'/../resources/views', 'thinhpd');
          $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-         $this->loadRoutesFrom(__DIR__.'/routes/custom.php');
+//         $this->loadRoutesFrom(__DIR__.'/routes/custom.php');
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {

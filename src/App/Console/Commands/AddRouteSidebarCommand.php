@@ -45,7 +45,6 @@ class AddRouteSidebarCommand extends Command
         $commands[] = 'php artisan backpack:base:add-custom-route "CRUD::resource(\'blog\', \'BlogCrudController\');"';
         $commands[] = 'php artisan backpack:base:add-custom-route "Route::get(\'lang/{lang}\', \'LangController@changeLang\')->name(\'lang\');"';
         $commands[] = 'php artisan backpack:base:add-sidebar-content "<li><a href=\'{{ backpack_url(\'blog\') }}\'><i class=\'fa fa-tag\'></i> <span>Blogs</span></a></li>"';
-        $commands[] = 'php artisan backpack:base:add-sidebar-content "<li><a href=\'{{ backpack_url(\'blog\') }}\'><i class=\'fa fa-tag\'></i> <span>Blogs</span></a></li>"';
         foreach ($commands as $command)
         {
             $process = new Process($command, null, null, null, 300, null);
